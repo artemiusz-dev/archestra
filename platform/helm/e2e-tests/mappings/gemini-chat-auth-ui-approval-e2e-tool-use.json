@@ -1,5 +1,5 @@
 {
-  "scenarioName": "gemini-auth-ui-e2e",
+  "scenarioName": "gemini-auth-ui-approval-e2e",
   "requiredScenarioState": "Started",
   "newScenarioState": "tool_result_received",
   "priority": 1,
@@ -7,8 +7,7 @@
     "method": "POST",
     "urlPathPattern": "/gemini/v1beta/models/[^:]+:streamGenerateContent",
     "bodyPatterns": [
-      { "contains": "auth-calltime-ui-e2e" },
-      { "doesNotContain": "approval" }
+      { "contains": "auth-calltime-ui-approval-e2e" }
     ]
   },
   "response": {

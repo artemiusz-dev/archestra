@@ -1,13 +1,12 @@
 {
-  "scenarioName": "auth-ui-e2e",
+  "scenarioName": "auth-ui-approval-e2e",
   "requiredScenarioState": "tool_result_received",
   "priority": 1,
   "request": {
     "method": "POST",
     "urlPath": "/anthropic/v1/messages",
     "bodyPatterns": [
-      { "contains": "auth-calltime-ui-e2e" },
-      { "doesNotContain": "approval" }
+      { "contains": "auth-calltime-ui-approval-e2e" }
     ]
   },
   "response": {
